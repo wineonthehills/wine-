@@ -16,15 +16,21 @@
 
    header {
   text-align: center;
-  padding: 25px 20px; /* enough space without being huge */
-  background-color: #0d1b2a; /* or your preferred color */
+  padding: 10px 20px;
+  background-color: #0d1b2a;
+  height: 100px;       /* fixed header height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertically center logo */
+  overflow: hidden;    /* hide overflow if any */
 }
 
 header img {
-  max-width: 600px;  /* bigger logo but limited width */
-  width: 90%;
-  height: auto;
+  height: 90px;       /* almost fills header height */
+  width: auto;
+  max-width: none;    /* allow width to auto-adjust */
 }
+
 
    .navbar {
       background-color: #111;
