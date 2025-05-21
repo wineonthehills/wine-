@@ -14,21 +14,17 @@
       scroll-behavior: smooth;
     }
 
-   header {
+header {
   text-align: center;
-  padding: 10px 20px;
-  background-color: #0d1b2a;
-  height: 100px;       /* fixed header height */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* vertically center logo */
-  overflow: hidden;    /* hide overflow if any */
+  padding: 20px 20px;
+  background-color: #0d1b2a; /* or your chosen color */
 }
 
 header img {
-  height: 90px;       /* almost fills header height */
-  width: auto;
-  max-width: none;    /* allow width to auto-adjust */
+  max-width: 500px;  /* bigger logo */
+  width: 100%;       /* full width up to max */
+  height: auto;      /* keep proportions */
+  display: inline-block;
 }
 
 
