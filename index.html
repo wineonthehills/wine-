@@ -2,140 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wine on the Hills</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0 20px;
       font-family: 'Playfair Display', serif;
       background-color: #000;
       color: #d4af37;
-      font-size: 20px;
-      line-height: 1.8;
+      scroll-behavior: smooth;
     }
 
-   header {
-  text-align: center;
-  padding: 30px 0 20px;
-  background-color: #333333; /
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background-color: #003366;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
 
-header img {
-  max-width: 400px;
-  width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
+    header img {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+    }
 
+    .navbar {
+      background-color: #111;
+      text-align: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.3rem;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     section {
+      padding: 50px 20px;
       max-width: 900px;
       margin: auto;
-      padding: 60px 0;
+    }
+
+    section:nth-of-type(even) {
+      background-color: #111;
     }
 
     h2 {
-      font-size: 3rem;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #d4af37;
+      border-bottom: 1px solid #d4af37;
       padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 2.5rem;
     }
 
     p {
-      font-size: 1.5rem;
-      margin-bottom: 40px;
-    }
-
-    strong {
-      font-weight: 700;
-      font-size: 1.6rem;
-    }
-
-    .phone {
-      font-weight: 700;
-      font-size: 1.8rem;
-      color: #d4af37;
+      font-size: 1.3rem;
+      line-height: 1.6;
     }
 
     .footer {
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 30px 20px;
+      font-size: 1rem;
       color: #999;
     }
 
+    .cta {
+      text-align: center;
+      background-color: #222;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+    }
+
     @media (max-width: 600px) {
-      body {
-        font-size: 18px;
-      }
       h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
-      .phone {
-        font-size: 1.5rem;
-      }
-      header img {
-        max-width: 100%;
-        width: 95%;
-      }
-      section {
-        padding: 40px 0;
+      .navbar a {
+        margin: 0 10px;
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="Logo.png" alt="Wine on the Hills Logo" />
+    <img src="Logo.png" alt="Wine on the Hills Logo">
   </header>
 
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <section class="about" id="about">
-  <h2>About Us</h2>
-  <p>
-    With over two decades of expertise in kosher wine and spirits, <strong>Wine on the Hills</strong> proudly serves the heart of Woodridge, NY. Our curated collection is the result of years of experience, industry relationships, and a deep appreciation for fine kosher wines and liquors.
-  </p>
-  <p>
-    We specialize in sourcing unique and high-quality kosher selections from around the world — from classic Israeli vineyards to hidden gems in France, Italy, and California. Each bottle on our shelves is carefully chosen for its quality, authenticity, and value.
-  </p>
-  <p>
-    <strong>Wine on the Hills</strong> is more than a store — it’s a destination for discovery, celebration, and connection. Whether you’re preparing for Shabbos, a simcha, or simply exploring new flavors, our knowledgeable staff is here to guide you every step of the way.
-  </p>
-  <p>
-    Come visit us in the Center One Kosher Shopping Center and experience a wine shop that blends tradition with sophistication. Your perfect bottle awaits.
-  </p>
-</section>
-
-
-  <section class="hours" id="hours">
-    <h2>Store Hours</h2>
+    <h2>About Us</h2>
     <p>
-      <strong>Sunday – Wednesday:</strong> 12 PM – 6 PM<br />
-      <strong>Thursday:</strong> 10 AM – 10 PM<br />
-      <strong>Friday:</strong> 9 AM – 6 PM
+      With over two decades of expertise in kosher wine and spirits, <strong>Wine on the Hills</strong> proudly serves the heart of Woodridge, NY. Our curated collection is the result of years of experience, industry relationships, and a deep appreciation for fine kosher wines and liquors.
+    </p>
+    <p>
+      We specialize in sourcing unique and high-quality kosher selections from around the world — from classic Israeli vineyards to hidden gems in France, Italy, and California.
+    </p>
+    <p>
+      Whether you’re preparing for Shabbos, a simcha, or simply exploring new flavors, our knowledgeable staff is here to help you find the perfect bottle. All products are certified kosher, with <em>Mevushal</em> and <em>non-Mevushal</em> options clearly labeled.
     </p>
   </section>
 
+  <section class="hours" id="hours">
+    <h2>Store Hours</h2>
+    <p><strong>Sunday – Wednesday:</strong> 12 PM – 6 PM<br>
+    <strong>Thursday:</strong> 10 AM – 10 PM<br>
+    <strong>Friday:</strong> 9 AM – 6 PM</p>
+  </section>
+
   <section class="contact" id="contact">
-    <h2>Contact us visit us</h2>
+    <h2>Contact</h2>
     <p>
-      <strong>Wine on the Hills</strong><br />
-      13 Greenfield Rd, Woodridge, NY<br />
-      Phone: <span class="phone">845-682-3613</span>
+      <strong>Wine on the Hills</strong><br>
+      Center One Kosher Shopping Center<br>
+      13 Greenfield Rd, Woodridge, NY<br>
+      Phone: <strong>845-682-3613</strong>
     </p>
+  </section>
+
+  <section class="cta">
+    <h2>Stop In & Say Hello!</h2>
+    <p>We're here to help you discover your next favorite kosher wine. Visit us today or give us a call.</p>
   </section>
 
   <div class="footer">
     &copy; 2025 Wine on the Hills. All rights reserved.
   </div>
+
 </body>
 </html>
-
 
 
