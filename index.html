@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
   <style>
-    /* Body with black marble background */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -17,25 +16,14 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
 
-      /* Black marble background image */
+      /* Your black marble background */
       background-image: url('background-image.jpg');
       background-repeat: repeat;
       background-position: center top;
       background-size: auto;
     }
 
-    /* Main container to center content with black overlay */
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      background-color: #000;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
-      overflow: hidden;
-      padding: 0 30px 60px 30px;
-    }
-
-    /* Banner Header */
+    /* Keep all other styles exactly as you had them */
     header.banner {
       position: relative;
       border-radius: 12px 12px 0 0;
@@ -60,14 +48,14 @@
       text-align: center;
       padding: 0 20px;
       max-width: 90%;
-      pointer-events: none; /* disable pointer events on container */
+      pointer-events: none;
     }
 
     .banner-content h1 {
       font-size: 4rem;
       margin-bottom: 20px;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-      pointer-events: auto; /* enable click/select */
+      pointer-events: auto;
     }
 
     .banner-content p {
@@ -99,7 +87,6 @@
       box-shadow: 0 6px 12px rgba(179, 143, 22, 0.7);
     }
 
-    /* Navbar */
     .navbar {
       background-color: #111;
       text-align: center;
@@ -231,56 +218,54 @@
 </head>
 <body>
 
-  <div class="container">
-    <header class="banner">
-      <img src="banner-wine.png" alt="Wine on the Hills Banner" />
-      <div class="banner-content">
-        <h1>Wine on the Hills</h1>
-        <p>Your destination for kosher wines & spirits</p>
-      </div>
-    </header>
+  <header class="banner">
+    <img src="banner-wine.png" alt="Wine on the Hills Banner" />
+    <div class="banner-content">
+      <h1>Wine on the Hills</h1>
+      <p>Your destination for kosher wines & spirits</p>
+    </div>
+  </header>
 
-    <nav class="navbar">
-      <a href="#about">About</a>
-      <a href="#hours">Hours</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section class="about" id="about">
-      <h2>About Us</h2>
-      <p><strong>Wine on the Hills</strong> is more than just a wine store — it's a new destination for the kosher community in the Catskills to explore, celebrate, and enjoy premium wines and spirits with confidence and joy.</p>
-      <p>Located in the Center One Kosher Shopping Center in Woodridge, New York, our brand-new, beautifully designed store offers an inviting, boutique-style experience with a focus on quality, service, and tradition. From the moment you walk through our doors, you’ll feel the warmth and refinement that makes Wine on the Hills truly special.</p>
-      <p>We specialize exclusively in <strong>kosher-certified wines and spirits</strong> — hand-selected from Israel, France, California, and around the world. Whether you're planning a simcha, enhancing your Shabbos table, or selecting a meaningful gift, we are here to guide you through a thoughtfully curated selection that balances tradition with contemporary taste.</p>
-      <p>At Wine on the Hills, our mission is to provide not only the finest kosher wines and liquors but also an elevated shopping experience. Our knowledgeable staff is passionate about helping every customer — whether you're a seasoned wine enthusiast or just getting started — discover new favorites and make confident choices.</p>
-      <p>We are proud to support the community with reliable service, fair pricing, and a sincere commitment to quality. We invite you to stop by, browse our collection, and experience the newest gem in the Catskills kosher scene. You’ll find everything from world-renowned labels to boutique kosher producers — always beautifully presented and backed by friendly, personal attention.</p>
-      <p>Whether you're visiting for the summer, hosting a celebration, or stocking up for Yom Tov, Wine on the Hills is here to make every occasion more tasteful and memorable.</p>
-    </section>
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p><strong>Wine on the Hills</strong> is more than just a wine store — it's a new destination for the kosher community in the Catskills to explore, celebrate, and enjoy premium wines and spirits with confidence and joy.</p>
+    <p>Located in the Center One Kosher Shopping Center in Woodridge, New York, our brand-new, beautifully designed store offers an inviting, boutique-style experience with a focus on quality, service, and tradition. From the moment you walk through our doors, you’ll feel the warmth and refinement that makes Wine on the Hills truly special.</p>
+    <p>We specialize exclusively in <strong>kosher-certified wines and spirits</strong> — hand-selected from Israel, France, California, and around the world. Whether you're planning a simcha, enhancing your Shabbos table, or selecting a meaningful gift, we are here to guide you through a thoughtfully curated selection that balances tradition with contemporary taste.</p>
+    <p>At Wine on the Hills, our mission is to provide not only the finest kosher wines and liquors but also an elevated shopping experience. Our knowledgeable staff is passionate about helping every customer — whether you're a seasoned wine enthusiast or just getting started — discover new favorites and make confident choices.</p>
+    <p>We are proud to support the community with reliable service, fair pricing, and a sincere commitment to quality. We invite you to stop by, browse our collection, and experience the newest gem in the Catskills kosher scene. You’ll find everything from world-renowned labels to boutique kosher producers — always beautifully presented and backed by friendly, personal attention.</p>
+    <p>Whether you're visiting for the summer, hosting a celebration, or stocking up for Yom Tov, Wine on the Hills is here to make every occasion more tasteful and memorable.</p>
+  </section>
 
-    <section class="hours" id="hours">
-      <h2>Store Hours</h2>
-      <p><strong>Sunday – Wednesday:</strong> 12 PM – 6 PM<br />
-        <strong>Thursday:</strong> 10 AM – 10 PM<br />
-        <strong>Friday:</strong> 9 AM – 6 PM
-      </p>
-    </section>
+  <section class="hours" id="hours">
+    <h2>Store Hours</h2>
+    <p><strong>Sunday – Wednesday:</strong> 12 PM – 6 PM<br />
+      <strong>Thursday:</strong> 10 AM – 10 PM<br />
+      <strong>Friday:</strong> 9 AM – 6 PM
+    </p>
+  </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>
-        <strong>Wine on the Hills</strong><br />
-        Center One Kosher Shopping Center<br />
-        13 Greenfield Rd, Woodridge, NY<br />
-        Phone: <strong>845-682-3613</strong>
-      </p>
-    </section>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      <strong>Wine on the Hills</strong><br />
+      Center One Kosher Shopping Center<br />
+      13 Greenfield Rd, Woodridge, NY<br />
+      Phone: <strong>845-682-3613</strong>
+    </p>
+  </section>
 
-    <section class="cta">
-      <h2>Stop In & Say Hello!</h2>
-      <p>We're here to help you discover your next favorite kosher wine. Visit us today or give us a call.</p>
-    </section>
+  <section class="cta">
+    <h2>Stop In & Say Hello!</h2>
+    <p>We're here to help you discover your next favorite kosher wine. Visit us today or give us a call.</p>
+  </section>
 
-    <div class="footer">&copy; 2025 Wine on the Hills. All rights reserved.</div>
-  </div>
+  <div class="footer">&copy; 2025 Wine on the Hills. All rights reserved.</div>
 
 </body>
 </html>
