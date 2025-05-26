@@ -23,49 +23,26 @@
     }
 
     /* Banner Header */
-    header.banner {
-      position: relative;
-      max-width: 1150px;
-      margin: 0px auto;
-      border-radius: 0px;
-      overflow: hidden;
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
-    }
+   header.banner {
+  height: 200px; /* adjust as needed */
+  overflow: hidden;
+}
 
-    header.banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+header.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-    .banner-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #d4af37;
-      font-family: 'Playfair Display', serif;
-      text-align: center;
-      padding: 0 20px;
-      max-width: 90%;
-      pointer-events: none; /* disable pointer events on container */
-    }
+.banner-content h1 {
+  font-size: 2.5rem; /* reduce from 4rem */
+}
 
-    .banner-content h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-      pointer-events: auto; /* enable click/select */
-    }
+.banner-content p {
+  font-size: 1.2rem; /* reduce from 1.8rem */
+  margin-bottom: 15px;
+}
 
-    .banner-content p {
-      font-size: 1.8rem;
-      margin-bottom: 30px;
-      font-weight: 300;
-      letter-spacing: 0.05em;
-      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-      pointer-events: auto;
-    }
 
     .btn {
       background-color: #d4af37;
