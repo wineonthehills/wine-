@@ -10,16 +10,16 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      /* Black marble texture background on body */
-      background: url('https://images.unsplash.com/photo-1570271347885-6ed5b7572a68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') repeat;
+      /* Updated black marble texture background */
+      background: url('https://images.unsplash.com/photo-1550966871-959d138a3d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') repeat;
       background-size: cover;
+      background-position: center;
       color: #d4af37;
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Centered container with solid black background */
     .container {
       max-width: 1100px;
       margin: 40px auto;
@@ -29,7 +29,8 @@
       padding: 20px;
     }
 
-    /* Banner Header */
+    /* rest of your CSS unchanged */
+
     header.banner {
       position: relative;
       border-radius: 12px;
@@ -53,14 +54,14 @@
       text-align: center;
       padding: 0 20px;
       max-width: 90%;
-      pointer-events: none; /* disable pointer events on container */
+      pointer-events: none;
     }
 
     .banner-content h1 {
       font-size: 4rem;
       margin-bottom: 20px;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-      pointer-events: auto; /* enable click/select */
+      pointer-events: auto;
     }
 
     .banner-content p {
@@ -92,7 +93,6 @@
       box-shadow: 0 6px 12px rgba(179, 143, 22, 0.7);
     }
 
-    /* Navbar */
     .navbar {
       background-color: #111;
       text-align: center;
@@ -229,11 +229,6 @@
 
     <header class="banner">
       <img src="banner-wine.png" alt="Wine on the Hills Banner" />
-      <!-- If you want the banner-content text over image, add it here -->
-      <!-- <div class="banner-content">
-        <h1>Wine on the Hills</h1>
-        <p>Your kosher wine destination</p>
-      </div> -->
     </header>
 
     <nav class="navbar">
@@ -280,7 +275,6 @@
   </div>
 </body>
 </html>
-
 
 
 
